@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section>
+        <img src="bg.jpg" id="bg">
+        <img src="moon.png" id="moon">
+        <img src="mountain.png" id="mountain">
+        <img src="road.png" id="road">
+        <h2 id="text">Moon Light</h2>
+    </section>
+    <div class="container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio cumque aspernatur dicta eum doloribus eligendi voluptatum ea nisi saepe quae repellat non, vero laboriosam officiis sequi nulla inventore neque, adipisci quam odit. Tenetur praesentium blanditiis illo iusto reprehenderit fugiat, reiciendis at odio. Inventore amet quae asperiores provident, labore eum tempora? Perspiciatis quasi ratione officia esse assumenda dolores necessitatibus error incidunt iusto nam possimus natus consequuntur id, voluptas ipsa dicta? Pariatur natus quisquam magnam vitae nemo voluptatibus nisi dolorum ipsam quaerat architecto aliquid, sapiente autem enim vel tempora voluptas nihil maxime similique quo commodi odit. Placeat labore quasi nostrum reiciendis quibusdam.</p>
+        <div class="parallax">
+
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio cumque aspernatur dicta eum doloribus eligendi voluptatum ea nisi saepe quae repellat non, vero laboriosam officiis sequi nulla inventore neque, adipisci quam odit. Tenetur praesentium blanditiis illo iusto reprehenderit fugiat, reiciendis at odio. Inventore amet quae asperiores provident, labore eum tempora? Perspiciatis quasi ratione officia esse assumenda dolores necessitatibus error incidunt iusto nam possimus natus consequuntur id, voluptas ipsa dicta? Pariatur natus quisquam magnam vitae nemo voluptatibus nisi dolorum ipsam quaerat architecto aliquid, sapiente autem enim vel tempora voluptas nihil maxime similique quo commodi odit. Placeat labore quasi nostrum reiciendis quibusdam.</p>
+    </div>
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        });
+    </script>
+</body>
+
+</html>
